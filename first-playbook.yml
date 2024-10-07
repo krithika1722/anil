@@ -9,4 +9,4 @@
         var: my_variable
     - name: simple debug
       debug:
-        msg: "{{ my_variable }}"
+        msg: " The current value of variable is {{ my_variable }}"
