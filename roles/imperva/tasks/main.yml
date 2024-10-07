@@ -14,5 +14,5 @@
   register: dir_out
 - name: simple debug
   debug:
-    msg: dir_out
+    msg: "The directoy is {{ dir_out }}"
 
