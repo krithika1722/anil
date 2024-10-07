@@ -1,0 +1,13 @@
+---
+ - name: second playbook
+   hosts: all
+   gather_facts: true
+   tasks:
+    - name: nginx install
+      apt:
+       name: nginx
+       state: present
+    - name: nginx start
+      service:
+       name: nginx
+       state: started
