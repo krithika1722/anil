@@ -1,1 +1,9 @@
-
+- name: simple debug
+  debug:
+    msg: "anil"
+- name: simple variable debug
+  debug:
+    var: my_variable
+- name: simple debug
+  debug:
+    msg: " The current value of variable is {{ my_variable }}"
