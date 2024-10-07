@@ -9,7 +9,7 @@ pipeline {
             steps {
             
               sh '''
-              ansible all -i /home/devopsadmin/inventory -m ping -e ansible_ssh_pass=Anil@1234
+              ansible-playbook -i /home/devopsadmin/inventory first-playbook -e ansible_ssh_pass=Anil@1234
               '''
             }
         }
