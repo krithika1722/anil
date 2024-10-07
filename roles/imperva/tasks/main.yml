@@ -11,3 +11,8 @@
   file:
    path: /home/devopsadmin/anil
    state: directory
+  register: dir_out
+- name: simple debug
+  debug:
+    msg: dir_out
+
