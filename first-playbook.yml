@@ -1,6 +1,6 @@
 ---
 - hosts: localhost
   vars_files:
-    - vars/main.yml
+    - vars/vars.yml
   roles:
    - imperva
