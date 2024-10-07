@@ -2,11 +2,13 @@
  - name: second playbook
    hosts: all
    gather_facts: true
+   become: true
    tasks:
     - name: nginx install
       apt:
        name: nginx
        state: present
+       cache_update: yes
     - name: nginx start
       service:
        name: nginx
