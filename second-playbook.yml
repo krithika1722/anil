@@ -8,7 +8,7 @@
       apt:
        name: nginx
        state: present
-       cache_update: yes
+       update_cache: yes
     - name: nginx start
       service:
        name: nginx
