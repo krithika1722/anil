@@ -7,7 +7,7 @@ pipeline {
     stages {
        stage('checkout') {
         steps {
-           git branch: 'main', url: 'https://github.com/krithika1722/anil.git'
+           git branch: '${branch}', url: 'https://github.com/krithika1722/anil.git'
         }
        }
         stage('ansible') {
