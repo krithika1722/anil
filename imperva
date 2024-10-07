@@ -1,0 +1,10 @@
+---
+- name: ansible basic
+  hosts: all
+  gather_facts: flase
+  tasks:
+    - name: pinging
+      copy:
+        src: /home/devopsadmin/anil.txt
+        dest: /home/devopsadmin/anil/
+         remote_src:yes
