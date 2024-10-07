@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   vars:
-   - my_variable:"Anil"
+   - my_variable: "Anil"
   tasks:
     - name: simple debug
       debug:
