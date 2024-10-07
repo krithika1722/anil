@@ -1,5 +1,12 @@
 ---
-- hosts: all
+- hosts: localhost
   tasks:
-    debug:
-      msg: "anil"
+    - name: simple debug
+      debug:
+        msg: "anil"
+    - name: simple variable debug
+      debug:
+        var: my_variable
+    - name: simple debug
+      debug:
+        msg: "{{ my_variable }}"
