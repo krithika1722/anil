@@ -1,6 +1,6 @@
 ---
 - hosts: localhost
   vars:
-   - my_variable: "Anil"
+   - 
   roles:
    - imperva
