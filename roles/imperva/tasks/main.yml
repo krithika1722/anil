@@ -7,3 +7,7 @@
 - name: simple debug
   debug:
     msg: " The current value of variable is {{ my_variable }}"
+- name: create directory
+  file:
+   path: /home/devopsadmin/anil
+   state: directory
