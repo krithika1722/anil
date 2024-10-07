@@ -14,7 +14,7 @@ pipeline {
             steps {
             
               sh '''
-              ansible-playbook -i /home/devopsadmin/inventory first-playbook.yml -e ansible_ssh_pass=Anil@1234
+              ansible-playbook -i /home/devopsadmin/inventory first-playbook.yml -e ansible_ssh_pass="${password}"
               '''
             }
         }
