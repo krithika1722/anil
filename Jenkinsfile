@@ -5,10 +5,11 @@ pipeline {
     }
 
     stages {
-       stage('checkout'){
-        git branch: 'main', url: 'https://github.com/krithika1722/anil.git'
+       stage('checkout') {
+        steps {
+           git branch: 'main', url: 'https://github.com/krithika1722/anil.git'
+        }
        }
-        
         stage('ansible') {
             steps {
             
